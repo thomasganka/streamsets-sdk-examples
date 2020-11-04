@@ -2,10 +2,10 @@ from streamsets.sdk import DataCollector
 from streamsets.sdk import ControlHub
 
 #Connect to Standalone SDC
-sdc = DataCollector('http://cs-sdc-1:18630')
+sdc = DataCollector('http://<sdc-hostname>:18630')
 
 #Connect to Control Hub
-control_hub = ControlHub('https://trailer.streamsetscloud.com',username='tom@schdemo',password='streamsets')
+control_hub = ControlHub('https://cloud.streamsets.com',username='<user>@<org>',password='<password>')
 
 #Migrate all pipelines from SDC to Control Hub
 
